@@ -63,8 +63,7 @@ nav li a:hover {
 }
 
 #clock {
-    font-size: 6.5rem;
-    padding: 2rem;
+    font-size: 5rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.753);
     font-weight: bold;
@@ -104,8 +103,7 @@ nav li a:hover {
 }
 
 .container .stopwatch-container #display {
-    font-size: 4rem;
-    padding: 2rem;
+    font-size: 3.5rem;
     font-family: monospace;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.753);
