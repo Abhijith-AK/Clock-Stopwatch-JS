@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://github.com/Abhijith-AK">
+                <img src="mylogo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Clock </a></li>
+                <li><a href="stopwatch.html">Stopwatch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 id="myh1">Stopwatch</h1>
+        <div class="stopwatch-container">
+            <div id="display">
+                00:00:00:00
+            </div>
+            <div id="controls">
+                <button id="startBtn" onclick="start()">Start</button>
+                <button id="stopBtn" onclick="stoop()">Stop</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

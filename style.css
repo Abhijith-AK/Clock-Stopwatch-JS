@@ -1,0 +1,155 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    margin: 0;
+}
+
+/* header */
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    height: 50px;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 10px 16px;
+    margin: 0 8px;
+    background-color: rgba(48, 53, 53, 0.603);
+    border-radius: 24px;
+    transition: background-color ease-in 0.25s;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: hsla(0, 0%, 100%, 0.884);
+}
+
+/* Clock */
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1439754389055-9f0855aa82c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNsb2NrJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D) no-repeat center fixed;
+    background-size: cover;
+}
+
+#clock {
+    font-size: 6.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 0%, 0.253);
+}
+
+/* Stopwatch */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1543164904-a81403d527a2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center fixed;
+    background-size: cover;
+}
+
+.container #myh1 {
+    font-size: 4rem;
+    color: aliceblue;
+    font-family: monospace;
+    margin: 10px;
+}
+
+.container .stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px transparent;
+    border-radius: 24px;
+    padding: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.container .stopwatch-container #display {
+    font-size: 4rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.753);
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.753);
+    margin-bottom: 25px;
+}
+
+.stopwatch-container #controls button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: background-color ease-in 0.35s;
+}
+
+/* start button */
+
+#controls #startBtn {
+    background-color: rgba(0, 128, 0, 0.692);
+}
+
+#controls #startBtn:hover {
+    background-color: rgba(0, 128, 0, 0.438);
+}
+
+
+/* stop button */
+
+#controls #stopBtn {
+    background-color: rgba(128, 0, 0, 0.74);
+}
+
+#controls #stopBtn:hover {
+    background-color: rgba(128, 0, 0, 0.438);
+}
+
+/* reset button */
+
+#controls #resetBtn {
+    background-color: rgba(0, 13, 128, 0.685);
+}
+
+#controls #resetBtn:hover {
+    background-color: rgba(0, 2, 128, 0.438);
+}
